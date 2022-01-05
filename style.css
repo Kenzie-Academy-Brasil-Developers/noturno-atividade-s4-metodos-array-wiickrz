@@ -1,0 +1,97 @@
+body,
+html,
+header,
+h2, h3,
+p,
+main,
+section,
+input, label,
+ul, li,
+button,
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    list-style: none;
+}
+
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+main {
+    background-color: rgb(255, 243, 227);
+    height: 100vh;
+}
+
+header {
+    background-color: azure;
+    box-shadow: 0px 3px 3px 2px rgba(0,0,0,0.5);
+}
+header div{
+    width: 75%;
+    max-width: 1060px;
+    margin: auto;
+}
+header div h2{
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+header div p{
+    font-size: 1rem;
+    padding: 15px 0;
+}
+
+main div{
+    width: 75%;
+    max-width: 1060px;
+    margin: auto;
+    padding: 10px;
+}
+main div section{
+    padding: 10px 5px;
+}
+main div section h3{
+    text-align: center;
+}
+main div section div{
+    width: 100%;
+    height: 15vh;
+    background-color: turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+main div section div#kata3{
+    flex-wrap: wrap;
+}
+main div section div#kata3 ul{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+    padding-bottom:20px;
+}
+main div section div#kata3 ul li input:checked ~ label{
+    font-weight: bold;
+}
+main div section div#kata3 ul li label{
+    font-size: 1rem;
+}
+main div section div#kata3 label{
+    text-align: end;
+    padding-right: 10px;
+    flex-basis: 40%;
+}
+main div section div#kata3 input{
+    flex-basis: 40%;
+    font-size: 1.1rem;
+}
+main div section div#kata3 button{
+    padding: 10px 25px;
+    flex-basis: 40%;
+    margin-top: 10px;
+}
